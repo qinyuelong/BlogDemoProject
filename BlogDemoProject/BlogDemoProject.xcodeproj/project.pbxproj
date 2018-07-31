@@ -18,7 +18,7 @@
 		7B3ACE81210994EF003831C3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3ACE80210994EF003831C3 /* SnapKit.framework */; };
 		7B3ACE8421099C74003831C3 /* CustomNavigationBarItemNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE8321099C74003831C3 /* CustomNavigationBarItemNavigationController.swift */; };
 		7B3ACE862109AC27003831C3 /* CnbbiSubViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE852109AC27003831C3 /* CnbbiSubViewController2.swift */; };
-		7B66D0A2210B09530099475A /* UINavigationController+ScrollViewPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D0A1210B09530099475A /* UINavigationController+ScrollViewPopGesture.swift */; };
+		7B6550372110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6550362110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		7B3ACE80210994EF003831C3 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		7B3ACE8321099C74003831C3 /* CustomNavigationBarItemNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarItemNavigationController.swift; sourceTree = "<group>"; };
 		7B3ACE852109AC27003831C3 /* CnbbiSubViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CnbbiSubViewController2.swift; sourceTree = "<group>"; };
-		7B66D0A1210B09530099475A /* UINavigationController+ScrollViewPopGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ScrollViewPopGesture.swift"; sourceTree = "<group>"; };
+		7B6550362110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ScrollViewPopGesture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				7B3ACE7921096815003831C3 /* CustomNavigationBarBackItemViewController.swift */,
 				7B3ACE7D2109716C003831C3 /* CnbbiSubViewController1.swift */,
 				7B3ACE852109AC27003831C3 /* CnbbiSubViewController2.swift */,
-				7B66D0A1210B09530099475A /* UINavigationController+ScrollViewPopGesture.swift */,
+				7B6550362110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift */,
 			);
 			path = CustomNavigationBarBackItem;
 			sourceTree = "<group>";
@@ -200,11 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3ACE6821096287003831C3 /* ViewController.swift in Sources */,
-				7B66D0A2210B09530099475A /* UINavigationController+ScrollViewPopGesture.swift in Sources */,
 				7B3ACE7E2109716C003831C3 /* CnbbiSubViewController1.swift in Sources */,
 				7B3ACE7C21096EFB003831C3 /* BaseViewController.swift in Sources */,
 				7B3ACE862109AC27003831C3 /* CnbbiSubViewController2.swift in Sources */,
 				7B3ACE8421099C74003831C3 /* CustomNavigationBarItemNavigationController.swift in Sources */,
+				7B6550372110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift in Sources */,
 				7B3ACE6621096287003831C3 /* AppDelegate.swift in Sources */,
 				7B3ACE7A21096815003831C3 /* CustomNavigationBarBackItemViewController.swift in Sources */,
 			);

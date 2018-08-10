@@ -14,6 +14,7 @@ class CnbbiSubViewController2: BaseViewController {
         super.viewDidLoad()
 
         setupSubViews()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +34,8 @@ class CnbbiSubViewController2: BaseViewController {
         scrollView.layoutIfNeeded()
         
         scrollView.contentSize = CGSize(width: scrollView.bounds.size.width * 2, height: scrollView.bounds.size.height * 2)
+        
+        self.addPopGesture(toView: scrollView)
     }
     
 

@@ -59,7 +59,7 @@ class ViewController: UITableViewController {
         let aClass = NSClassFromString(className) as! UIViewController.Type
         let vc = aClass.init()
         vc.title = classNameDic[key]
-        let nvc = CustomNavigationBarItemNavigationController(rootViewController: vc)
+        let nvc = UINavigationController(rootViewController: vc)
         present(nvc, animated: true, completion: nil)
     }
 

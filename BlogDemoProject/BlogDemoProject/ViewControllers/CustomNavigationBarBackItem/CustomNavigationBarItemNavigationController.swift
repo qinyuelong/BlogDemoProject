@@ -28,13 +28,13 @@ class CustomNavigationBarItemNavigationController: UINavigationController {
 
 // MARK : - UIGestureRecognizerDelegate
 
-extension CustomNavigationBarItemNavigationController: UIGestureRecognizerDelegate{
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        if gestureRecognizer == self.interactivePopGestureRecognizer {
-            if viewControllers.count < 2 || (visibleViewController == viewControllers[0]) {
-                return false
-            }
-        }
-        return true
-    }
-}
+//extension CustomNavigationBarItemNavigationController {
+//    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        if gestureRecognizer == self.interactivePopGestureRecognizer {
+//            if viewControllers.count < 2 || (visibleViewController == viewControllers[0]) {
+//                return false
+//            }
+//        }
+//        return true
+//    }
+//}

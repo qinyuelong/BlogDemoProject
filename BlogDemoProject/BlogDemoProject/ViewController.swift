@@ -26,9 +26,12 @@ class ViewController: UITableViewController {
     func setupClassNameArray() {
         classNameArray = [
             "CustomNavigationBarBackItemViewController",
+            "CalculateTextFrameViewController",
         ];
         
-        classNameDic = ["CustomNavigationBarBackItemViewController" : "自定义导航栏Back按钮 滑动返回手势"]
+        classNameDic = ["CustomNavigationBarBackItemViewController" : "自定义导航栏Back按钮 滑动返回手势",
+                        "CalculateTextFrameViewController" : "计算文本Frame"
+        ]
         
         tableView.reloadData()
     }
@@ -54,13 +57,17 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let key = classNameArray[indexPath.row]
-        
+        if canPerformSegue(identifier: key){
+            // 如果storyboard 中设置了就不用手动生成 vc
+            performSegue(withIdentifier: key, sender: nil)
+            return
+        }
         let className = "BlogDemoProject.\(classNameArray[indexPath.row])"
         let aClass = NSClassFromString(className) as! UIViewController.Type
         let vc = aClass.init()
         vc.title = classNameDic[key]
-        let nvc = CustomNavigationBarItemNavigationController(rootViewController: vc)
-        present(nvc, animated: true, completion: nil)
+//        let nvc = CustomNavigationBarItemNavigationController(rootViewController: vc)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

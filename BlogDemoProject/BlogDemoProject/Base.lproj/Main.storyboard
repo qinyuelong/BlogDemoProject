@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OI3-hb-Ffx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OI3-hb-Ffx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,10 +43,66 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="5hF-QS-PDn"/>
+                    <connections>
+                        <segue destination="LHh-1Q-eQa" kind="show" identifier="CalculateTextFrameViewController" id="qlT-3q-xHp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNC-z4-X5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="113.79310344827587"/>
+        </scene>
+        <!--Calculate Text Frame View Controller-->
+        <scene sceneID="G9m-F6-ob5">
+            <objects>
+                <viewController id="LHh-1Q-eQa" customClass="CalculateTextFrameViewController" customModule="BlogDemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oU4-5p-aSG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgR-TT-rA4">
+                                <rect key="frame" x="0.0" y="262.5" width="375" height="142"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-Kq-pP0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <color key="backgroundColor" red="0.72575121951234911" green="0.81651671271454473" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.87301979666551133" blue="0.89446229031026347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qxk-Kq-pP0" secondAttribute="trailing" id="5LR-Xi-avH"/>
+                                    <constraint firstItem="Qxk-Kq-pP0" firstAttribute="top" secondItem="bgR-TT-rA4" secondAttribute="top" id="Nqc-5N-mFJ"/>
+                                    <constraint firstAttribute="height" constant="142" id="ewx-6x-tB7"/>
+                                    <constraint firstItem="Qxk-Kq-pP0" firstAttribute="leading" secondItem="bgR-TT-rA4" secondAttribute="leading" id="jhc-wL-rkT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-YO-hVO">
+                                <rect key="frame" x="144.5" y="495" width="86" height="30"/>
+                                <state key="normal" title="Change Text"/>
+                                <connections>
+                                    <action selector="changeTextAction:" destination="LHh-1Q-eQa" eventType="touchUpInside" id="Uff-dh-jsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lRJ-YO-hVO" firstAttribute="top" secondItem="bgR-TT-rA4" secondAttribute="bottom" constant="90.5" id="8tV-Mn-Ea4"/>
+                            <constraint firstItem="bgR-TT-rA4" firstAttribute="leading" secondItem="oU4-5p-aSG" secondAttribute="leading" id="Csu-xU-uKS"/>
+                            <constraint firstItem="lRJ-YO-hVO" firstAttribute="centerX" secondItem="oU4-5p-aSG" secondAttribute="centerX" id="ITc-jc-zmU"/>
+                            <constraint firstItem="bgR-TT-rA4" firstAttribute="centerY" secondItem="oU4-5p-aSG" secondAttribute="centerY" id="W9P-wD-Ush"/>
+                            <constraint firstAttribute="trailing" secondItem="bgR-TT-rA4" secondAttribute="trailing" id="gvI-Iu-0yj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kHw-lT-BSy"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="bgR-TT-rA4" id="o0J-Te-owW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rio-fx-EsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.5999999999999" y="-616.64167916041981"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OnC-Dv-mNR">

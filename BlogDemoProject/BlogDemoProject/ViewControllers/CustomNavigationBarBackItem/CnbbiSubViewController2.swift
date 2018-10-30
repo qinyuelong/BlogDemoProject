@@ -5,6 +5,7 @@
 //  Created by LinkE on 2018/7/26.
 //  Copyright © 2018年 dev. All rights reserved.
 //  默认 ScrollView 的界面 边界滑动返回是失效的 如果想要scrolllView 也滑动返回(https://github.com/banchichen/TZScrollViewPopGesture)
+//  http://www.cocoachina.com/ios/20180503/23269.html
 
 import UIKit
 

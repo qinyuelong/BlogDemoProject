@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25933D632187601500537E1D /* CalculateTextFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25933D622187601500537E1D /* CalculateTextFrameViewController.swift */; };
+		25933D66218763C900537E1D /* CanPerformSegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25933D65218763C900537E1D /* CanPerformSegueExtension.swift */; };
+		25AF1146210F5D60004B65DF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3ACE80210994EF003831C3 /* SnapKit.framework */; };
 		7B3ACE6621096287003831C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE6521096287003831C3 /* AppDelegate.swift */; };
 		7B3ACE6821096287003831C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE6721096287003831C3 /* ViewController.swift */; };
 		7B3ACE6B21096287003831C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3ACE6921096287003831C3 /* Main.storyboard */; };
@@ -15,13 +18,14 @@
 		7B3ACE7A21096815003831C3 /* CustomNavigationBarBackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE7921096815003831C3 /* CustomNavigationBarBackItemViewController.swift */; };
 		7B3ACE7C21096EFB003831C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE7B21096EFB003831C3 /* BaseViewController.swift */; };
 		7B3ACE7E2109716C003831C3 /* CnbbiSubViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE7D2109716C003831C3 /* CnbbiSubViewController1.swift */; };
-		7B3ACE81210994EF003831C3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3ACE80210994EF003831C3 /* SnapKit.framework */; };
 		7B3ACE8421099C74003831C3 /* CustomNavigationBarItemNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE8321099C74003831C3 /* CustomNavigationBarItemNavigationController.swift */; };
 		7B3ACE862109AC27003831C3 /* CnbbiSubViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3ACE852109AC27003831C3 /* CnbbiSubViewController2.swift */; };
 		7B6550372110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6550362110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25933D622187601500537E1D /* CalculateTextFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTextFrameViewController.swift; sourceTree = "<group>"; };
+		25933D65218763C900537E1D /* CanPerformSegueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanPerformSegueExtension.swift; sourceTree = "<group>"; };
 		7B3ACE6221096287003831C3 /* BlogDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3ACE6521096287003831C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B3ACE6721096287003831C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,13 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B3ACE81210994EF003831C3 /* SnapKit.framework in Frameworks */,
+				25AF1146210F5D60004B65DF /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25933D6121875FDC00537E1D /* CalculateTextFrame */ = {
+			isa = PBXGroup;
+			children = (
+				25933D622187601500537E1D /* CalculateTextFrameViewController.swift */,
+			);
+			path = CalculateTextFrame;
+			sourceTree = "<group>";
+		};
+		25933D642187639D00537E1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25933D65218763C900537E1D /* CanPerformSegueExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7B3ACE5921096286003831C3 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +104,8 @@
 		7B3ACE77210967AB003831C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				25933D642187639D00537E1D /* Extensions */,
+				25933D6121875FDC00537E1D /* CalculateTextFrame */,
 				7B3ACE78210967D2003831C3 /* CustomNavigationBarBackItem */,
 				7B3ACE7B21096EFB003831C3 /* BaseViewController.swift */,
 			);
@@ -200,10 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3ACE6821096287003831C3 /* ViewController.swift in Sources */,
+				25933D632187601500537E1D /* CalculateTextFrameViewController.swift in Sources */,
 				7B3ACE7E2109716C003831C3 /* CnbbiSubViewController1.swift in Sources */,
 				7B3ACE7C21096EFB003831C3 /* BaseViewController.swift in Sources */,
 				7B3ACE862109AC27003831C3 /* CnbbiSubViewController2.swift in Sources */,
 				7B3ACE8421099C74003831C3 /* CustomNavigationBarItemNavigationController.swift in Sources */,
+				25933D66218763C900537E1D /* CanPerformSegueExtension.swift in Sources */,
 				7B6550372110526300FEC9A5 /* UINavigationController+ScrollViewPopGesture.swift in Sources */,
 				7B3ACE6621096287003831C3 /* AppDelegate.swift in Sources */,
 				7B3ACE7A21096815003831C3 /* CustomNavigationBarBackItemViewController.swift in Sources */,
@@ -365,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.qin.BlogDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -389,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.qin.BlogDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
